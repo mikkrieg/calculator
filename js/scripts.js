@@ -1,31 +1,33 @@
-function add(number1, number2) {
+
+// Business Logic
+
+const add = function(number1, number2) {
   return number1 + number2;
 }
 
-function subtract(number1, number2) {
+const subtract = function(number1, number2) {
   return number1 - number2;
 }
 
-function divide(number1, number2) {
+const divide = function(number1, number2) {
   return number1 / number2;
 }
 
-function multiply(number1, number2) {
+const multiply = function(number1, number2) {
   return number1 * number2;
 }
 
-const number1 = parseInt(prompt("Enter a number:"));
-const number2 = parseInt(prompt("Enter another number:"));
+// User logic
+$(document).ready(function() {
+  $("form#add").submit(function(event) {
+    const number1 = parseInt($("#add1").val());
+    const number2 = parseInt($("#add2").val());
 
-const result = multiply(number1, number2);
+    alert(add(number1, number2));
 
-alert(result);
+    event.preventDefault();
+  });
+});
 
-// function temperatureConversion(temp1) {
-//   return (temp1 * 2) + 32;
-// }
-
-// const result = temperatureConversion(0);
-// alert(result);
 
 
