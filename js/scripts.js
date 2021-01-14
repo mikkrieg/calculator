@@ -20,12 +20,13 @@ const multiply = function(number1, number2) {
 // User logic
 $(document).ready(function() {
   $("form#add").submit(function(event) {
-    const number1 = parseInt($("#add1").val());
-    const number2 = parseInt($("#add2").val());
-
-    alert(add(number1, number2));
-
     event.preventDefault();
+    const number1 = parseInt($("input#add1").val());
+    const number2 = parseInt($("input#add2").val());
+
+    const result = add(number1, number2);
+
+    $("div#output").text(result);
   });
 });
 
