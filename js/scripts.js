@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     const result = add(number1, number2);
 
-    $("div#output").text(result);
+    $("div#output1").text(result);
   });
 
   $("form#subtract").submit(function(event) {
@@ -34,9 +34,9 @@ $(document).ready(function() {
     const number1 = parseInt($("input#subtract1").val());
     const number2 = parseInt($("input#subtract2").val());
 
-    const result = add(number1, number2);
+    const result = subtract(number1, number2);
 
-    $("div#output").text(result);
+    $("div#output2").text(result);
   });
 
   $("form#multiply").submit(function(event) {
@@ -44,19 +44,19 @@ $(document).ready(function() {
     const number1 = parseInt($("input#multiply1").val());
     const number2 = parseInt($("input#multiply2").val());
 
-    const result = add(number1, number2);
+    const result = multiply(number1, number2);
 
-    $("div#output").text(result);
+    $("div#output3").text(result);
   });
 
-  $("form#add").submit(function(event) {
+  $("form#divide").submit(function(event) {
     event.preventDefault();
     const number1 = parseInt($("input#divide1").val());
     const number2 = parseInt($("input#divide2").val());
 
-    const result = add(number1, number2);
+    const result = divide(number1, number2);
 
-    $("div#output").text(result);
+    $("div#output4").text(result);
   });
 });
 
