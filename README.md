@@ -10,6 +10,7 @@
 
 * _HTML_
 * _CSS_
+* _JavaScript_
 
 ### Libaries Used
 * _Bootstrap_
